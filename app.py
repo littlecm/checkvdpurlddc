@@ -17,7 +17,7 @@ vin = query_params.get("vin", [""])[0]
 
 if domain and vin:
     # Construct the URL using the domain and VIN from query parameters
-    url = f"https://{domain}.com/catcher.esl?vin={vin}"
+    url = f"https://{domain}/catcher.esl?vin={vin}"
 
     try:
         # Make the HTTP request while allowing redirects
